@@ -1,12 +1,12 @@
 package com.hooning.springdemo;
 
-public class TrackCoach implements Coach {
+public class TrackCoachWithDestroyMethod implements Coach, DisposalBean {
 
     private FortuneService fortuneService;
 
-    public TrackCoach() {}
+    public TrackCoachWithDestroyMethod() {}
 
-    public TrackCoach(FortuneService fortuneService) {
+    public TrackCoachWithDestroyMethod(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
@@ -30,5 +30,8 @@ public class TrackCoach implements Coach {
         System.out.println("TrackCoach: inside method doMyCleanupStuff");
     }
 
-
+    @Override
+    public void destroy() {
+        System.out.println("TrackCoach: inside method destroy()");
+    }
 }

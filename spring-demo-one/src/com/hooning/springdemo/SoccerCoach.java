@@ -2,7 +2,9 @@ package com.hooning.springdemo;
 
 public class SoccerCoach implements Coach {
 
-    private final FortuneService fortuneService;
+    private FortuneService fortuneService;
+
+    public SoccerCoach() {}
 
     public SoccerCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
