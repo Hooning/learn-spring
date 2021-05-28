@@ -22,16 +22,16 @@ public class TrackCoachWithDestroyMethod implements Coach, DisposalBean {
 
     // add an init method
     public void doMyStartupStuff() {
-        System.out.println("TrackCoach: inside method doMyStartupStuff");
+        System.out.println("TrackCoachWithDestroyMethod: inside method doMyStartupStuff");
     }
 
     // add a destroy method
     public void doMyCleanupStuff() {
-        System.out.println("TrackCoach: inside method doMyCleanupStuff");
+        System.out.println("TrackCoachWithDestroyMethod: inside method doMyCleanupStuff");
     }
 
     @Override
     public void destroy() {
-        System.out.println("TrackCoach: inside method destroy()");
+        System.out.println("TrackCoachWithDestroyMethod: inside method destroy()");
     }
 }
