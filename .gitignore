@@ -1,7 +1,2 @@
-/spring-demo-one/.idea/
-/spring-demo-one/lib/
-/spring-demo-one/spring-demo-one.iml/
-
-/spring-demo-annotations/.idea/
-/spring-demo-annotations/lib/
-/spring-demo-annotations/spring-demo-annotations.iml/
+/.metadata/
+/out/*
