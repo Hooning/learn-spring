@@ -25,7 +25,17 @@
 				<form:option value="France" label="France" /> --%>
 				<form:options items="${student.countryOptions}" />
 			
-			</form:select> 			
+			</form:select> 	
+			
+			<br/><br/>
+			
+			Favorite Language:
+			
+			<%-- <form:radiobutton path="favoriteLanguage" value="Java" /> Java 
+			<form:radiobutton path="favoriteLanguage" value="Python" /> Python 
+			<form:radiobutton path="favoriteLanguage" value="Javascript" /> Javascript 
+			<form:radiobutton path="favoriteLanguage" value="C#" /> C# --%> 
+			<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}" />
 			
 			<br/><br/>
 			
