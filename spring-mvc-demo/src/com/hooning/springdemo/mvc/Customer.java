@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.hooning.springdemo.mvc.validation.CourseCode;
+
 public class Customer {
 
 	private String firstName;
@@ -21,6 +23,9 @@ public class Customer {
 	
 	@Pattern(regexp = "^[0-9]{5}", message = "Postal Code should be 5 digits")
 	private String postalCode;
+	
+	@CourseCode(value = "CHO", message = "Must start with CHO")
+	private String courseCode;
 	
 	public String getFirstName() {
 		return firstName;
@@ -52,6 +57,14 @@ public class Customer {
 
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
+	}
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 	
 }
