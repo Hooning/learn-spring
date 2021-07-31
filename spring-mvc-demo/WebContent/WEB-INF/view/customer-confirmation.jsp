@@ -12,6 +12,10 @@
 		<br><br>
 		
 		The customer has ${customer.freePasses} free passes
+		
+		<br><br>
+		
+		The postal code: ${customer.postalCode}
 
 	</body>
 </html>
